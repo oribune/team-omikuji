@@ -9,8 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const logs = JSON.parse(localStorage.getItem('omikuji_logs')) || [];
         
         if (logs.length === 0) {
-            /* ここに追加 */
-
+            list.innerHTML = `
+                <li style = "justify-content: center; color:#95a5a6;">
+                    まだおみくじを引いていません。
+                </li>
+            `.trim();
             return;
         }
 
