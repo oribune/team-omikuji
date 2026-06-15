@@ -1,0 +1,64 @@
+/* トップ画面専用のデザイン */
+h1 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+#btn {
+    background-color: #ff4757;
+    color: #ffffff;
+    border: none;
+    /* 修正 */
+    padding: 0px 0px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 71, 87, 0.2);
+    transition: background 0.2s, transform 0.1s;
+}
+
+#btn:hover {
+    background-color: #ff6b81;
+}
+
+#btn:active {
+    transform: scale(0.98);
+}
+
+#result {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #fff9f0;
+    border-radius: 10px;
+    border: 2px dashed #ffb8b8;
+    animation: fadeIn 0.4s ease;
+}
+
+#rank {
+    font-size: 32px;
+    color: #d63031;
+    margin-bottom: 8px;
+}
+
+#msg {
+    font-size: 15px;
+    color: #2d3436;
+}
+
+/* 非表示にするためのクラス */
+.hide {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}

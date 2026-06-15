@@ -1,0 +1,48 @@
+/* 履歴画面専用のデザイン */
+h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#log-list {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+#log-list li {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#log-list li span {
+    color: #7f8c8d;
+}
+
+#log-list li strong {
+    color: #d63031;
+}
+
+#clear-btn {
+    background-color: #bdc3c7;
+    color: #ffffff;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 4px;
+    /* 修正 */
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.2s;
+}
+
+#clear-btn:hover {
+    background-color: #95a5a6;
+}
